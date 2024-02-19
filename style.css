@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
+    /* You can specify other font properties here like font-weight, font-style, etc. */
+}
+
+*{
+    font-family: 'Pacifico', sans-serif;
+background-color: rgba(255, 255, 255, 0.615);}
+
+
+
+body, html{
+    display: flex;
+    flex: 1;
+    color:rgb(19, 97, 19);
+    margin: 0;
+}
+
+#leaves{
+    display: block;
+    width: auto;
+    max-width: 30vw;
+    height: 100vh;
+    object-fit: none;
+}
+
+p{
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 1.8em;
+    max-width: 100vw;
+}
+
+#logo-container{
+    position: absolute;
+    display: block;
+    top: 50vh;
+    transform: translateY(-50%);
+    opacity: 70%;
+    z-index: 1;
+    width: 100%;
+}
+
+#images-container{
+    display: block;
+    position: relative;
+    width: fit-content;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#logo{
+    width: 100%;
+    min-width: 300px;
+    height: clamp(300px, auto, auto);
+    min-height: 200px;
+    overflow: hidden;
+}
+
+#big-container{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    justify-content: center;
+}
+
+#form-container{
+    display: block;
+    font-size: 1.3vw;
+}
+
+#grid-container{
+    text-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 8vw;
+}
+
+legend{
+    font-size: 2vw;
+    text-decoration-line: underline;
+}
+
+label{
+    align-self: flex-start;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font-size: 2rem;
+}
+
+span{
+    text-decoration: underline;
+}
+
+button{
+    margin-top: 3vh;
+    font-size: 1.5rem;
+    width: fit-content;
+    color: darkgreen;
+    }
+
+button:hover{
+    background-color: darkgreen;
+    color: black;
+}
